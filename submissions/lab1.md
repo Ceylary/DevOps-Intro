@@ -23,14 +23,17 @@ Story from lecture - in **March 2024**, an attacker (account `JiaT75`) maintai
 
 Nocised that folder was copied into system folder, changed lokation of it.
 
-### Task 2
+### Task 2 
+
+Changes were added to main branch 
+![[Pasted image 20260609223115.png]]
 
 ### Task 3 - GitHub Community Engagement
 
 Stars: 
 ![[Pasted image 20260609214203.png]]
 
-follows:
+Follows:
 ![[Pasted image 20260609214253.png]]
 
 - Why starring repositories matters in open source:
@@ -43,3 +46,42 @@ Following developers and teammates creates a feed of their activity on GitHub. T
 
 ### Bonus Task
 
+Rules changed: 
+![[Pasted image 20260609220359.png]]
+![[Pasted image 20260609220411.png]]
+
+Tried to violate rules I made and got rejected. Command from task didn't work so I changed it. 
+First attemt with command from task:
+`PS C:\Users\Admin\DevOps-Intro> git commit -S=false -s --allow-empty -m "test: unsigned commit (should fail)"`
+`error: Couldn't load public key =false: No such file or directory?`
+
+`fatal: failed to write commit object`
+
+Changed one + screenshot:
+
+`PS C:\Users\Admin\DevOps-Intro> git -c commit.gpgsign=false commit -s --allow-empty -m "test: unsigned commit (should fail)"`
+`[main 834b47e] test: unsigned commit (should fail)`
+`PS C:\Users\Admin\DevOps-Intro> git push origin main`
+`Enter passphrase for key '/c/Users/Admin/.ssh/id_ed25519':`
+`Enumerating objects: 1, done.`
+`Counting objects: 100% (1/1), done.`
+`Writing objects: 100% (1/1), 219 bytes | 219.00 KiB/s, done.`
+`Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)`
+`remote: Bypassed rule violations for refs/heads/main:`
+`remote:`
+`remote: - Commits must have verified signatures.`
+`remote:   Found 1 violation:`
+`remote:`
+`remote:   834b47ef160013807c4d3873a51d6ce06aa33977`
+`remote:`
+`remote: - Changes must be made through a pull request.`
+`remote:`
+`To github.com:Ceylary/DevOps-Intro.git`
+   `b0ec79b..834b47e  main -> main`
+
+![[Pasted image 20260609220128.png]]
+
+Reflection: 
+What would Knight Capital's deploy day have looked like with branch protection + required signing on the prod deploy branch? 
+
+If the production branch had required signed commits, the deploying developer would have been cryptographically identified — no anonymous or impersonated changes possible, it would create accountability. Branch protection could prevent all this situation from happening making mistake more visible before shanges was applied. All this protections could prevent this situation from happening.
