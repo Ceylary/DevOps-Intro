@@ -8,7 +8,9 @@
 ### Output of `git log --show-signature -1` showing **Good** signature
 
 Nedeed to run command below for task to be done: 
-`echo "elfsgithub@gmail.com $(cat ~/.ssh/id_ed25519.pub)" > ~/.ssh/allowed_signers`
+```
+echo "elfsgithub@gmail.com $(cat ~/.ssh/id_ed25519.pub)" > ~/.ssh/allowed_signers
+```
 
 ![5](screenshots/28.png)
 
@@ -51,33 +53,35 @@ Rules changed:
 
 Tried to violate rules I made and got rejected. Command from task didn't work so I changed it. 
 First attemt with command from task:
-`PS C:\Users\Admin\DevOps-Intro> git commit -S=false -s --allow-empty -m "test: unsigned commit (should fail)"`
-`error: Couldn't load public key =false: No such file or directory?`
+```
+PS C:\Users\Admin\DevOps-Intro> git commit -S=false -s --allow-empty -m "test: unsigned commit (should fail)"
+error: Couldn't load public key =false: No such file or directory?
 
-`fatal: failed to write commit object`
+fatal: failed to write commit object
+```
 
 Changed one + screenshot:
-
-`PS C:\Users\Admin\DevOps-Intro> git -c commit.gpgsign=false commit -s --allow-empty -m "test: unsigned commit (should fail)"`
-`[main 834b47e] test: unsigned commit (should fail)`
-`PS C:\Users\Admin\DevOps-Intro> git push origin main`
-`Enter passphrase for key '/c/Users/Admin/.ssh/id_ed25519':`
-`Enumerating objects: 1, done.`
-`Counting objects: 100% (1/1), done.`
-`Writing objects: 100% (1/1), 219 bytes | 219.00 KiB/s, done.`
-`Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)`
-`remote: Bypassed rule violations for refs/heads/main:`
-`remote:`
-`remote: - Commits must have verified signatures.`
-`remote:   Found 1 violation:`
-`remote:`
-`remote:   834b47ef160013807c4d3873a51d6ce06aa33977`
-`remote:`
-`remote: - Changes must be made through a pull request.`
-`remote:`
-`To github.com:Ceylary/DevOps-Intro.git`
-   `b0ec79b..834b47e  main -> main`
-
+```
+PS C:\Users\Admin\DevOps-Intro> git -c commit.gpgsign=false commit -s --allow-empty -m "test: unsigned commit (should fail)"
+[main 834b47e] test: unsigned commit (should fail)
+PS C:\Users\Admin\DevOps-Intro> git push origin main
+Enter passphrase for key '/c/Users/Admin/.ssh/id_ed25519':
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 219 bytes | 219.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Bypassed rule violations for refs/heads/main:
+remote:
+remote: - Commits must have verified signatures.
+remote:   Found 1 violation:
+remote:
+remote:   834b47ef160013807c4d3873a51d6ce06aa33977
+remote:
+remote: - Changes must be made through a pull request.
+remote:
+To github.com:Ceylary/DevOps-Intro.git
+   b0ec79b..834b47e  main -> main
+```
 ![12](screenshots/128.png)
 
 Reflection: 
