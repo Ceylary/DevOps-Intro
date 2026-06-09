@@ -2,20 +2,20 @@
 
 ### Output of `curl` against `/health`, `/notes`, and `POST /notes`
 
-![[Pasted image 20260609172958.png]]
-![[Pasted image 20260609173020.png]]
-![[Pasted image 20260609191240.png]]
+![](Pasted image 20260609172958.png)
+![](Pasted image 20260609173020.png)
+![](Pasted image 20260609191240.png)
 
 ### Output of `git log --show-signature -1` showing **Good** signature
 
 Nedeed to run command below for task to be done: 
 `echo "elfsgithub@gmail.com $(cat ~/.ssh/id_ed25519.pub)" > ~/.ssh/allowed_signers`
 
-![[Pasted image 20260609192828.png]]
+![](Pasted image 20260609192828.png)
 
 ### A screenshot of the Verified badge on your platform's PR/commit page
 
-![[Pasted image 20260609193127.png]]
+![](Pasted image 20260609193127.png)
 
 ### A 2-3 sentence explanation: _why_ signed commits matter (referencing the xz-utils March 2024 story from Lecture 1)
 
@@ -26,15 +26,15 @@ Nocised that folder was copied into system folder, changed lokation of it.
 ### Task 2 
 
 Changes were added to main branch 
-![[Pasted image 20260609223115.png]]
+![](Pasted image 20260609223115.png)
 
 ### Task 3 - GitHub Community Engagement
 
 Stars: 
-![[Pasted image 20260609214203.png]]
+![](Pasted image 20260609214203.png)
 
 Follows:
-![[Pasted image 20260609214253.png]]
+![](Pasted image 20260609214253.png)
 
 - Why starring repositories matters in open source:
 
@@ -47,8 +47,8 @@ Following developers and teammates creates a feed of their activity on GitHub. T
 ### Bonus Task
 
 Rules changed: 
-![[Pasted image 20260609220359.png]]
-![[Pasted image 20260609220411.png]]
+![](Pasted image 20260609220359.png)
+![](Pasted image 20260609220411.png)
 
 Tried to violate rules I made and got rejected. Command from task didn't work so I changed it. 
 First attemt with command from task:
@@ -79,7 +79,7 @@ Changed one + screenshot:
 `To github.com:Ceylary/DevOps-Intro.git`
    `b0ec79b..834b47e  main -> main`
 
-![[Pasted image 20260609220128.png]]
+![](Pasted image 20260609220128.png)
 
 Reflection: 
 What would Knight Capital's deploy day have looked like with branch protection + required signing on the prod deploy branch? 
