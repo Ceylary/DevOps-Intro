@@ -2,19 +2,19 @@
 
 ### Output of `curl` against `/health`, `/notes`, and `POST /notes`
 
-![1](screenshots/Pasted image 20260609172958.png)
-![2](screenshots/Pasted image 20260609173020.png)
-![3](screenshots/Pasted image 20260609191240.png)
+![1](screenshots/58.png)
+![2](screenshots/20.png)
+![3](screenshots/40.png)
 ### Output of `git log --show-signature -1` showing **Good** signature
 
 Nedeed to run command below for task to be done: 
 `echo "elfsgithub@gmail.com $(cat ~/.ssh/id_ed25519.pub)" > ~/.ssh/allowed_signers`
 
-![5](screenshots/Pasted image 20260609192828.png)
+![5](screenshots/28.png)
 
 ### A screenshot of the Verified badge on your platform's PR/commit page
 
-![6](screenshots/Pasted image 20260609193127.png)
+![6](screenshots/27.png)
 
 ### A 2-3 sentence explanation: _why_ signed commits matter (referencing the xz-utils March 2024 story from Lecture 1)
 
@@ -25,15 +25,15 @@ Nocised that folder was copied into system folder, changed lokation of it.
 ### Task 2 
 
 Changes were added to main branch 
-![7](screenshots/Pasted image 20260609223115.png)
+![7](screenshots/115.png)
 
 ### Task 3 - GitHub Community Engagement
 
 Stars: 
-![8](screenshots/Pasted image 20260609214203.png)
+![8](screenshots/203.png)
 
 Follows:
-![9](screenshots/Pasted image 20260609214253.png)
+![9](screenshots/253.png)
 
 - Why starring repositories matters in open source:
 
@@ -46,8 +46,8 @@ Following developers and teammates creates a feed of their activity on GitHub. T
 ### Bonus Task
 
 Rules changed: 
-![10](screenshots/Pasted image 20260609220359.png)
-![11](screenshots/Pasted image 20260609220411.png)
+![10](screenshots/359.png)
+![11](screenshots/411.png)
 
 Tried to violate rules I made and got rejected. Command from task didn't work so I changed it. 
 First attemt with command from task:
@@ -78,7 +78,7 @@ Changed one + screenshot:
 `To github.com:Ceylary/DevOps-Intro.git`
    `b0ec79b..834b47e  main -> main`
 
-![12](screenshots/Pasted image 20260609220128.png)
+![12](screenshots/128.png)
 
 Reflection: 
 What would Knight Capital's deploy day have looked like with branch protection + required signing on the prod deploy branch? 
