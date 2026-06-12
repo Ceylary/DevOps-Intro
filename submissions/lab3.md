@@ -212,7 +212,7 @@ A malicious PR could attempt to write corrupted cache entries that protected bra
 
 Full pipeline is already completing in **≤ 90 s** wall-clock, and if it not enough I have no idea how to optimise it more. There is already more optimisations than task 2 requred so I will write about them.
 
-![7](screenshots/measure 3.png)
+![7](screenshots/measure3.png)
 
 ### B.2: Apply ≥ 3 additional optimizations beyond Task 2
 
