@@ -180,15 +180,18 @@ Temporarily disabled each optimization with a commit to make measurements.
 | Baseline (no cache, single Go version, no path filter) | 27 s       |
 | With cache                                             | 36 s       |
 | With cache + matrix                                    | 26 s       |
-Screenshots: 
+
+
+Screenshots:
+ 
 Baseline
-![4](screenshots/measure 1.png)
+![4](screenshots/measure1.png)
 
 With cache
-![5](screenshots/measure 2.png)
+![5](screenshots/measure2.png)
 
 With cache + matrix
-![6](screenshots/measure 3.png)
+![6](screenshots/measure3.png)
 
 ### 2.5: Document
 
