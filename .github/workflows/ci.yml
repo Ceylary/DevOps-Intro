@@ -15,8 +15,9 @@ on:
 permissions:
   contents: read
 
-env:
-  GOFLAGS: -buildvcs=false
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   vet:
